@@ -7,6 +7,7 @@ import SearchBox from './components/SearchBox'
 import ThemeCustomizerToggle from './components/ThemeCustomizerToggle'
 import ThemeModeToggle from './components/ThemeModeToggle'
 import FullScreenToggler from './components/FullScreenToggler'
+import LanguageSelector from '@/components/LanguageSelector'
 
 const Notifications = lazy(() => import('./components/Notifications'))
 
@@ -21,6 +22,9 @@ const TopNavigationBar = () => {
             <SearchBox />
           </div>
           <div className="d-flex align-items-center gap-1">
+            {/* Language Selector */}
+            <LanguageSelector />
+
             {/* Toggle Theme Mode */}
             <ThemeModeToggle />
 
